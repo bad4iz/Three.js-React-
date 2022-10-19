@@ -3,7 +3,6 @@ import { OrbitControls } from "@react-three/drei";
 import { Physics } from "@react-three/cannon";
 
 import { Plane } from "./Plane";
-import { Box } from "./Box";
 import { Box1 } from "./Box1";
 
 function App() {
@@ -18,16 +17,16 @@ function App() {
           angle={0.3}
           penumbra={1}
           intensity={2}
-          castShadow
+          castShadow={true}
         />
         <Plane />
         <Box1 />
-        <Box position={[1, 5, 0]} />
-        <Box position={[1, 6, 0]} />
-        <Box position={[1, 7, 0]} />
-        <Box position={[1, 8, 0]} />
-        <Box position={[1, 9, 0]} />
-        <Box position={[1, 10, 0]} />
+        <Box1 position={[1, 5, 0]} />
+        <Box1 position={[1, 6, 0]} />
+        <Box1 position={[1, 7, 0]} />
+        <Box1 position={[1, 8, 0]} />
+        <Box1 position={[1, 9, 0]} />
+        <Box1 position={[1, 10, 0]} />
       </Physics>
     </Canvas>
   );

@@ -4,6 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import App2 from "./App2";
+import App3 from "./App3";
 import { MementoMori } from "./MementoMori";
 import reportWebVitals from "./reportWebVitals";
 import { ErrorPage } from "./ErrorPage";
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
   {
     path: "/2",
     element: <App2 />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/3",
+    element: <App3 />,
     errorElement: <ErrorPage />,
   },
   {

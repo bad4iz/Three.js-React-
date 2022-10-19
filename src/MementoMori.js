@@ -4,8 +4,6 @@ import { Physics } from "@react-three/cannon";
 
 import { Plane } from "./Plane";
 import { Box } from "./Box";
-import { Box1 } from "./Box1";
-import { InstancedMeshBox } from "./InstancedMeshBox";
 
 export function MementoMori() {
   const y = 72;

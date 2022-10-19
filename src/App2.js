@@ -1,6 +1,6 @@
 import { Physics, useBox, useSphere, useSpring } from "@react-three/cannon";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { forwardRef, useEffect, useRef, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 
 const Box = forwardRef((props, fwdRef) => {
   const args = [1, 1, 1];

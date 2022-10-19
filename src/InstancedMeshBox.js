@@ -1,10 +1,7 @@
 import { useBox } from "@react-three/cannon";
-import { useFrame } from "react-three-fiber";
-import { useEffect } from "react";
-import * as THREE from "three";
 
-export const InstancedMeshBox = ({ data, count }) => {
-  const [ref, api] = useBox(() => ({
+export const InstancedMeshBox = () => {
+  const [ref] = useBox(() => ({
     mass: 1,
     // position: [
     //   4 - Math.random() * 8,
@@ -12,14 +9,6 @@ export const InstancedMeshBox = ({ data, count }) => {
     //   4 - Math.random() * 8,
     // ],
   }));
-
-  useEffect(() => {
-    const tempObject = new THREE.Object3D();
-
-    data.slice(0, 2).forEach((item) => {
-      api.position.set(item);
-    });
-  }, [data]);
 
   // useFrame(({ clock }) => {
   //   const a = clock.getElapsedTime();
